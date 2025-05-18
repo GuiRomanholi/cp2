@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // http://localhost:5197/index.html
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionString = builder.Configuration.GetConnectionString("OracleMoto");
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>
